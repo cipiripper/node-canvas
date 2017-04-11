@@ -26,7 +26,8 @@
     "pretest": "node-gyp build",
     "test": "standard examples/*.js test/server.js test/public/*.js benchmark/run.js util/has_lib.js && mocha test/*.test.js",
     "pretest-server": "node-gyp build",
-    "test-server": "node test/server.js"
+    "test-server": "node test/server.js",
+    "install" :"node-gyp rebuild --arch=i386"
   },
   "dependencies": {
     "nan": "^2.4.0",
